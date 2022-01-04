@@ -10,11 +10,8 @@ try:
     import os
     from importlib.metadata import distribution
 
-    # Verify packages version
-
-
-
     # Functions
+
 
     def download_text():
         download_button["text"] = "Download"
@@ -110,13 +107,9 @@ try:
     instruction_text.grid(column=0, row=0, padx=12, pady=9)
     video_link.grid(column=0, row=1, padx=47, pady=10)
     download_button.grid(column=0, row=2, padx=10, pady=10)
+    # Checking if user has outdated packages
     check()
     main_window.mainloop()
-
-    """
-    
-        
-    """
 
 except ModuleNotFoundError:
     print("Unable to find one or more of the required packages, please install or update them.\nPackages:\n\n- pytube\n"
