@@ -35,7 +35,7 @@ def check_pytube():
     for item in pytube_sp:
         item1 = int(item)
         peste.append(item1)
-    if peste[0] >= 12:
+    if peste[0] >= 11:
         if peste[2] >= 2:
             print(peste)
             return True
@@ -43,7 +43,7 @@ def check_pytube():
     return False
 
 
-def check():
+def check_version():
     if check_ttkthemes():
         pass
     else:
